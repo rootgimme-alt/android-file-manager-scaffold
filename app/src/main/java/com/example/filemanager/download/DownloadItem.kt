@@ -11,6 +11,8 @@ data class DownloadItem(
     val filename: String,
     val destUri: String,
     val protocol: String,
+    val credentialPrefix: String? = null,
+    val privateKeyName: String? = null,
     val totalBytes: Long = 0L,
     val downloadedBytes: Long = 0L,
     val status: Int = Status.QUEUED,
